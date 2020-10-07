@@ -3,6 +3,27 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
+  
+.column {
+  float: left;
+}
+
+/* Left and right column */
+.column.side {
+  width: 25%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 50%;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
 div {
   background-color: none;
   width:auto;
@@ -36,7 +57,7 @@ As of this writing, the interest rate is 7.4 percent. The rate of interest is re
 Investments made in SCSS account are eligible for income tax deduction up to Rs.1.5 lakhs under section 80C of the Income Tax Act. The Interest credited is fully taxable. In case the interest amount is greater than 50,000, Tax deducted at source (TDS) provisions would apply.
 <br><br>
 <b>Deposit limits:</b>
-Deposits can be made in sum with a minimum deposit of Rs 1000 & in multiples of Rs. 1000 thereafter. The maximum SCSS limit deposit is Rs.15 lakhs.
+Deposits can be made with a minimum sum of Rs 1000 & in multiples of Rs. 1000 thereafter. The maximum SCSS limit deposit is Rs.15 lakhs.
 <br><br>
 <b>How to invest:</b>
 
@@ -48,7 +69,7 @@ Deposits can be made in sum with a minimum deposit of Rs 1000 & in multiples of 
 You can open a SCSS account at all Inda Post offices. The interest will be automatically credited to the account holder’s linked savings account at the Post office. The wide reach of the Indian post will ensure that SCSS facility is available to all Indians, even those located in remote areas.
   </p>
 <p>
-<h4>2. Through selected Public/Private Sector Banks:</h5>
+<h4>2. Through selected Public/Private Sector Banks:</h4>
   </p>
 <p>
 An SCSS account as also be opened at selected Public/Private Sector Bank. As with the Post account, the Interest is credited to the linked savings account at the respective bank.
